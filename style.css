@@ -55,18 +55,33 @@ nav a:hover {
 }
 
 
+
 .hero {
-    background-color: #2c3e50;
+    
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://redac.trashtalk.co/wp-content/uploads/2020/10/Terrain-ballon-NBA-7-octobre-2020.jpg');
+    background-size: cover;      
+    background-position: center; 
     color: white;
     text-align: center;
-    padding: 4rem 1rem;
-    
+    padding: 6rem 1rem;         
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero h1 {
     font-family: 'Oswald', sans-serif;
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
 }
 
 .btn {
@@ -100,18 +115,39 @@ nav a:hover {
     flex-wrap: wrap; 
 }
 
+
 .card {
     background: white;
+    border-radius: 12px;        
+    overflow: hidden;            
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+    flex: 1;
+    min-width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer;
+}
+
+
+.card img {
+    width: 100%;
+    height: 200px;               
+    object-fit: cover;           
+}
+
+.card-content {
     padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    flex: 1; 
-    min-width: 250px;
+}
+
+
+.card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2); 
 }
 
 .card h3 {
-    color: #17408B;
+    color: #17408B; 
     margin-bottom: 0.5rem;
+    font-family: 'Oswald', sans-serif;
 }
 
 

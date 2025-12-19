@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À Propos - Guelaa Ahmed</title>
+    <title>NBA Passion - À Propos</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
 </head>
@@ -14,30 +14,64 @@
             <div class="logo">NBA PASSION</div>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="sujet.html">L'Histoire</a></li>
+                <li><a href="sujet.html">L'Histoire</a></li> 
                 <li><a href="apropos.html" class="active">À Propos</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="intro" style="max-width: 800px;">
-            <h1>À Propos de l'auteur</h1>
-            
-            <div class="card" style="text-align: left; margin-top: 2rem;">
-                <h2>Guelaa Ahmed</h2>
-                <p><strong>Étudiant en BUT R&T (Réseaux et Télécommunications)</strong></p>
-                <br>
-                <p>Bienvenue sur mon premier site web réalisé dans le cadre de la SAE 14.</p>
-                <p>J'ai choisi le thème de la NBA car c'est un sport qui allie performance individuelle et stratégie collective, des valeurs que j'apprécie.</p>
-                
-                <h3 style="margin-top: 20px; color: #17408B;">Technologies utilisées :</h3>
-                <ul style="margin-left: 20px; margin-top: 10px;">
-                    <li>HTML5 (Structure sémantique)</li>
-                    <li>CSS3 (Flexbox & Responsive)</li>
-                    <li>Git & GitHub (Versionnage)</li>
-                    <li>Visual Studio Code</li>
-                </ul>
+        <section class="intro">
+            <h1>L'auteur du projet</h1>
+            <p>Ce site a été réalisé dans le cadre de la SAE 14.</p>
+            <div class="cards-container">
+                <article class="card" style="max-width: 600px; margin: 0 auto;">
+                    <div class="card-content">
+                        <h3>Guelaa Ahmed</h3>
+                        <p>Étudiant passionné par le développement web et le basket-ball. 
+                            
+                        </p>
+                        <p><strong>Technologies utilisées :</strong> HTML5, CSS3, Flexbox.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Contactez-moi / Sondage</h2>
+            <p>Une question ou envie de débattre sur le GOAT ? Écrivez-moi !</p>
+
+            <div class="form-container">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="nom">Votre Nom</label>
+                        <input type="text" id="nom" name="nom" placeholder="Ex: Michael Jordan" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Votre Email</label>
+                        <input type="email" id="email" name="email" placeholder="Ex: mj23@bulls.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="team">Votre Franchise Préférée</label>
+                        <select id="team" name="team">
+                            <option value="lakers">Los Angeles Lakers</option>
+                            <option value="celtics">Boston Celtics</option>
+                            <option value="warriors">Golden State Warriors</option>
+                            <option value="bulls">Chicago Bulls</option>
+                            <option value="heat">Miami Heat</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Votre Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Votre message ici..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">Envoyer</button>
+                </form>
             </div>
         </section>
     </main>
